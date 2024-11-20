@@ -25,6 +25,7 @@ body{
     border: 15px solid #e0e4fc;
     border-radius: 25px;
     font-size: 0;
+
 }
 
 .contact_profile {
@@ -34,6 +35,7 @@ body{
     bottom: -52px;
     left: 22%;
     justify-content: center;
+
 }
 
 .contact_profile img {

@@ -9,64 +9,75 @@ body{
 
 .main{
     text-align: center;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
 .call_action_container{
-    width: 450px;
-    height: 165px;
+    width: 800px;
+    height: 250px;
     background-color:#3657cd;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border-radius: 10px;
-    font-size: 0;
-}
-.call_action_container_shadow{
-    width: 472px;
-    height: 187px;
-    background-color: #dde5f9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
+    border: 15px solid #e0e4fc;
+    border-radius: 25px;
     font-size: 0;
 }
 
 .contact_profile {
-
-    margin-left: 72px;
-    font-size: 0;
+    
+    display: flex;
     position: absolute;
-    top: 150px;
+    bottom: -52px;
+    left: 22%;
+    justify-content: center;
 }
 
 .contact_profile img {
     box-shadow: 0px 0px 33px -4px rgba(0,0,0,0.75);
-    border-radius: 25px;
+    border-radius: 50%;
     border: 4px solid #ffffff;
     margin: 10px;
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
 }
 
 h2{
-    margin-top: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
+    margin-top: 60px;
+    font-family:"Rubik", sans-serif ;
+    font-size: 23px;
     color: white;
     text-align: center;
 }
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    margin-top: 5px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 7px;
     color: white;
     text-align: center;
+}
+::placeholder{
+    color: whitesmoke;
+}
+
+.button{
+    margin-top: 15px;
+    margin-left: -30px;
+    border-style: hidden;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+}
+.material-symbols-outlined{
+    color: #3657cd;
+    position: relative;
 }
 
 

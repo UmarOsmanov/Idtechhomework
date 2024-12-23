@@ -8,12 +8,11 @@ html {
   width: 100%;
   background-color: #302c42;
   font-family: "Montserrat", serif;
-  height: 3000px;
 }
 .container{
   width: 100%;
   max-width: 1580px;
-  padding: 20px 3%;
+  padding: 30px 5%;
 }
 a {
   text-decoration: none;
@@ -93,6 +92,9 @@ li a {
   .header_items_button {
     display: none;
   }
+  .container{
+    padding: 0 3%;
+  }
   body,
   html {
     padding-top: 11px;
@@ -105,7 +107,6 @@ li a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 4%;
   }
   .hamburger_menu_icon {
     display: initial;
@@ -121,8 +122,8 @@ li a {
   background-image: url(photo/Lines-Transparent-Images.png);
   background-size: cover;
   background-position: center;
-  width: 88.3%;
-  height: 700px;
+  width: 90%;
+  height: 800px;
   z-index: 0;
   position: absolute;
 }
@@ -195,15 +196,15 @@ li a {
   }
   .advertising_img {
     position: relative;
-    width: 420px;
-    margin-left: 2%;
+    width: 100%;
+
     margin-bottom: 7%;
   }
   .advertising_img_background {
     position: absolute;
     margin-top: 2%;
-    margin-left: 3.8%;
-    width: 400px;
+    width: 90%;
+    margin-left: 2%;
   }
   .advertising_info p {
     display: none;
@@ -226,8 +227,7 @@ li a {
     margin-top: 6%;
   }
   .advertising_button {
-    width: 100%;
-    margin-left: 6%;
+    width: 85%;
   }
 }
 
@@ -324,7 +324,6 @@ li a {
 @media screen and (max-width: 768px) {
   .contact {
     height: 110px;
-    margin-left: 3%;
     margin-top: 11%;
     display: flex;
     justify-content: center;
@@ -368,7 +367,6 @@ li a {
   .introduction_title {
     display: flex;
     justify-content: center;
-    margin-left: 5%;
     margin-top: 10%;
   }
 }
@@ -415,6 +413,34 @@ p {
   font-weight: 750;
   color: #343045;
 }
+.why_build_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+.why_build_title_left h2 {
+  font-size: 1.9rem;
+  color: white;
+}
+.why_build_title_left h3 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  color: white;
+}
+.why_build_title_left img {
+  margin-bottom: -8%;
+  margin-left: 35px;
+}
+.why_build_title_left {
+  display: flex;
+  align-items: center;
+}
+.why_build_title_right {
+  width: 50%;
+  line-height: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   .about_hydra {
@@ -423,9 +449,8 @@ p {
   }
   .about_hydra_img img {
     margin-top: 3.5%;
-    margin-left: 2.8%;
-    width: 414px;
-    height: 437px;
+    width: 100%;
+    height: 407px;
   }
   .about_hydra_title h2 {
     display: none;
@@ -440,12 +465,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 85%;
   }
 
   .about_hydra_title p {
     text-align: center;
-    margin-left: 6%;
   }
   .about_hydra_button_main {
     width: 100%;
@@ -453,7 +477,21 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 3%;
+  }
+  .why_build_title_left img {
+    display: none;
+  }
+  .why_build_title_right {
+    display: none;
+  }
+  .why_build_title_left {
+    display: flex;
+    text-align: center;
+  }
+  .why_build_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
   }
 }
 
@@ -521,15 +559,416 @@ font-weight: 600;
   display: initial;
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 85%;
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
   padding: 10px 20px 10px 20px;
   border-radius: 40px;
   padding-bottom: 5%;
   padding-top: 5%;
-  margin-top: 5%;
+  margin-top: 8%;
+}
+.step_one p{
+  font-size: 0.8rem;
+}
+}
+
+
+.technologies_hardware{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.technologies_hardware_background{
+width: 100%;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top: 1.5%;
+}
+.technologies_hardware_background img{ 
+  width: 100%;
+  border-radius: 200px;
+  height: 230px;
+  object-fit: cover;
+}
+.technologies_hardware_title{
+position: absolute;
+line-height: 35px;
+color: white;
+}
+.technologies_hardware_title h3{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.technologies_hardware_brand{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.build_title {
+  display: flex;
+  justify-content: space-between;
+}
+.build_title_left h2 {
+  font-size: 1.9rem;
+  color: white;
+}
+.build_title_left h3 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  color: white;
+}
+.build_title_left img {
+  margin-bottom: -8%;
+  margin-left: 35px;
+}
+.build_title_left {
+  display: flex;
+  align-items: center;
+}
+.build_title_right {
+  width: 50%;
+  line-height: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .technologies_hardware_background img{
+    width: 100%;
+    border-radius: 200px;
+    height: 160px;
+    object-fit: cover;
+  }
+  .technologies_hardware_background{
+margin-top: 10%;
+  }
+
+  .technologies_hardware_title h3,h2{
+font-size: 1.2rem;
+  }
+  .technologies_hardware_brand img{
+    display: none;
+    margin: 0;
+  }
+  .technologies_hardware_brand{
+    display: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .technologies_hardware_brand .last_brand {
+    display: initial;
+    display: flex;
+
+  }
+  .build_title_left img {
+    display: none;
+  }
+  .build_title_right {
+    display: none;
+  }
+  .build_title_left {
+    display: flex;
+    text-align: center;
+  }
+  .build_title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+.hydra_process {
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.hydra_process h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.process_steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 89%;
+
+}
+.step_first{
+  text-align: center;
+}
+.step_first p {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.step {
+text-align: center;
+}
+
+.circle {
+  width: 115px;
+  height: 115px;
+  background: linear-gradient(251.27deg, #C0B7E8 0%, #8176AF 0%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 10px;
+  color: #343045;
+  border: 10px solid #00000052;
+  border-image: none;
 
 }
 
+.step p {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .step {
+    display: none;
+  }
+  .step_first{
+  display: initial;
+  width: 100%;
+}
+.circle {
+  width: 215px;
+  height: 215px;
+  border: 17px solid #00000052;
+  font-size: 3rem;
+}
+.step_first p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+}
+
+
+
+
+.join_hydra{
+  width: 100%;
+  height: 750px;
+  background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211E2E 100%);
+  text-align: center;
+  color: white;
+  border-radius: 70px;
+}
+.join_hydra img{
+  margin: 20px 0 20px 0;
+}
+.join_hydra h3{
+  margin-bottom: 5%;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.join_hydra h2{
+padding-top: 5%;
+}
+
+.first_table input{
+  padding: 1.2%;
+  width: 40%;
+  border-radius: 20px;
+  border: 1.5px solid white;
+  margin: 1%;
+  background: none;
+  color: white;
+  outline: none;
+
+}
+.second_table input{
+  width: 82.4%;
+  border-radius: 20px;
+  border: 1.5px solid white;
+  padding: 1.2%;
+  margin: 1%;
+  background: none;
+  color: white;
+  outline: none;
+}
+.third_table textarea{
+  max-width: 82.4%;
+  width: 82.4%;
+  height: 150px;
+  max-height: 200px;
+  border-radius: 40px;
+  border: 1.5px solid white;
+  padding: 1.2%;
+  margin: 1%;
+  background: none;
+  color: white;
+  outline: none;
+}
+.hydra_table_button{
+  width:15%;
+  height: 40px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border: none;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .first_table input{
+    width: 80%;
+    margin: 2%;
+    padding: 4%;
+  }
+  .join_hydra{
+    width: 90%;
+    border-radius: 40px;
+    margin: auto;
+  }
+  .third_table textarea{
+    padding: 5%;
+    border-radius: 30px;
+    margin: 2%;
+    height: 200px;
+  }
+  .second_table input{
+    width: 80%;
+    margin: 2%;
+    padding: 4%;
+  }
+  .hydra_table_button{
+    width:80%;
+    color: #211E2E;
+  }
+
+}
+
+
+
+
+.services{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services p{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.footer_logo{
+  width: 25%;
+}
+.footer_vector{
+margin-right: 5%;
+}
+.footer_about{
+  width: 25%;
+  line-height: 35px;
+}
+.footer_faq{
+  width: 25%;
+  line-height: 35px;
+}
+.footer_sosial{
+  width: 25%;
+}
+.sosial_logo_button{
+  width:60%;
+  height: 38px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border: none;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 2%;
+}
+.sosial_logo{
+margin: 30px 0 30px 0;
+}
+.sosial_logo img{
+  margin: 2px;
+}
+.footer_line{
+  width: 100%;
+  margin: 30px 0 30px 0;
+}
+.container h5{
+  color: white;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .join_hydra img {
+    width: 100%;
+  }
+
+  .services{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .footer_vector{
+    display: none;
+  }
+  .footer_about{
+    display: none;
+  }
+  .footer_faq{
+    display: none;
+  }
+  .footer_logo{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .footer_sosial{
+    width: 100%;
+    text-align: center;
+  }
+  .sosial_logo_button{
+    color: #211E2E;
+  }
+  .container h5{
+    width: 60%;
+    margin: auto;
+  }
 
 }

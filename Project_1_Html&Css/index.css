@@ -31,7 +31,7 @@ li a {
   align-items: center;
 }
 .header_items_logo :nth-child(1) {
-  margin-right: 4%;
+  margin-right: 4px;
 }
 .header_items_logo img {
   width: 35%;
@@ -58,7 +58,7 @@ li a {
   border-radius: 24px;
   cursor: pointer;
   margin-left: auto;
-  margin-right: 3%;
+  margin-right: 10px;
   font-size: 0.8rem;
   width: 135px;
   height: 40px;
@@ -85,34 +85,6 @@ li a {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .header_items_menu {
-    display: none;
-  }
-  .header_items_button {
-    display: none;
-  }
-  .container {
-    padding: 0 3%;
-  }
-  body,
-  html {
-    padding-top: 11px;
-    padding-left: 0;
-    background-color: #302c42;
-    font-family: "Montserrat", serif;
-    height: 2000px;
-  }
-  .header_items_logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .hamburger_menu_icon {
-    display: initial;
-  }
-}
-
 .advertising {
   display: flex;
   align-items: center;
@@ -135,7 +107,7 @@ li a {
   display: flex;
 }
 .arrow_icon {
-  margin-left: 4%;
+  margin-left: 30px;
   justify-content: center;
   display: flex;
   margin-top: 3px;
@@ -174,7 +146,7 @@ li a {
 }
 .advertising_banner {
   display: flex;
-  margin-top: 5%;
+  margin-top: 50px;
 }
 .advertising_img {
   position: relative;
@@ -182,53 +154,9 @@ li a {
 }
 .advertising_img_background {
   position: absolute;
-  margin-top: 0.8%;
-  margin-left: 0.8%;
+  margin-top: 12px;
+  margin-left: 10px;
   width: 400px;
-}
-
-@media screen and (max-width: 768px) {
-  .advertising {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    flex-direction: column-reverse;
-  }
-  .advertising_img {
-    position: relative;
-    width: 100%;
-
-    margin-bottom: 7%;
-  }
-  .advertising_img_background {
-    position: absolute;
-    margin-top: 2%;
-    width: 90%;
-    margin-left: 2%;
-  }
-  .advertising_info p {
-    display: none;
-  }
-  .advertising_info h3 {
-    font-size: 2rem;
-    color: white;
-    z-index: 1;
-    text-align: center;
-  }
-  .image {
-    width: 100%;
-  }
-  .arrow_icon {
-    display: none;
-  }
-  .button_arrow {
-    display: flex;
-    justify-content: center;
-    margin-top: 6%;
-  }
-  .advertising_button {
-    width: 85%;
-  }
 }
 
 .contact {
@@ -241,9 +169,9 @@ li a {
     rgba(58, 52, 86, 0.95) 0%,
     #211e2e 100%
   );
-  padding: 3%;
+  padding: 35px;
   border-radius: 90px;
-  margin-top: 6.5%;
+  margin-top: 50px;
   font-size: 0.8rem;
   height: 150px;
 }
@@ -252,21 +180,21 @@ li a {
 }
 .contact .contact_location {
   border-right: 2px solid #c0b7e854;
-  padding-right: 2.3%;
+  padding-right: 15px;
 }
 .contact .contact_call {
   border-right: 2px solid #c0b7e854;
-  padding-right: 2.3%;
+  padding-right: 35px;
 }
 .contact h3 {
-  margin-bottom: 3%;
+  margin-bottom: 7px;
   font-size: 1.3rem;
 }
 .contact p {
   font-weight: 350;
 }
 .contact img {
-  margin-right: 7%;
+  margin-right: 25px;
 }
 .contact_location {
   display: flex;
@@ -299,7 +227,7 @@ li a {
 .introduction_title {
   display: flex;
   justify-content: space-between;
-  margin-top: 6%;
+  margin-top: 26px;
 }
 .introduction_title_left h2 {
   font-size: 1.9rem;
@@ -311,7 +239,7 @@ li a {
   color: white;
 }
 .introduction_title_left img {
-  margin-bottom: -8%;
+  margin-bottom: -35px;
 }
 .introduction_title_left {
   display: flex;
@@ -324,67 +252,8 @@ li a {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .contact {
-    height: 110px;
-    margin-top: 11%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left_right_icon {
-    display: initial;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    padding: 3%;
-  }
-  .contact_call {
-    display: none;
-  }
-  .contact_message {
-    display: none;
-  }
-  .contact_location {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact_location h3 {
-    display: none;
-  }
-  .contact_location p {
-    width: 80%;
-  }
-  .contact .contact_location {
-    border-right: 0;
-  }
-  .contact_location img {
-    width: 20%;
-    margin-left: 9%;
-    padding-left: 9%;
-  }
-  .introduction_title_left img {
-    display: none;
-  }
-  .introduction_title_right {
-    display: none;
-  }
-  .introduction_title_left {
-    display: flex;
-    text-align: center;
-  }
-  .introduction_title {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-  }
-}
-
 .about_hydra {
-  margin-top: 6%;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -428,7 +297,7 @@ p {
 .why_build_title {
   display: flex;
   justify-content: space-between;
-  margin-top: 6%;
+  margin-top: 65px;
 }
 .why_build_title_left h2 {
   font-size: 1.9rem;
@@ -440,7 +309,7 @@ p {
   color: white;
 }
 .why_build_title_left img {
-  margin-bottom: -8%;
+  margin-bottom: -35px;
   margin-left: 35px;
 }
 .why_build_title_left {
@@ -452,59 +321,6 @@ p {
   line-height: 20px;
   font-size: 0.8rem;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .about_hydra {
-    display: flex;
-    flex-direction: column;
-  }
-  .about_hydra_img img {
-    margin-top: 3.5%;
-    width: 100%;
-    height: 407px;
-  }
-  .about_hydra_title h2 {
-    display: none;
-  }
-  .about_hydra_title h3 {
-    display: none;
-  }
-  .about_hydra_title {
-    width: 91%;
-  }
-  .about_hydra_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
-  }
-
-  .about_hydra_title p {
-    text-align: center;
-  }
-  .about_hydra_button_main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .why_build_title_left img {
-    display: none;
-  }
-  .why_build_title_right {
-    display: none;
-  }
-  .why_build_title_left {
-    display: flex;
-    text-align: center;
-  }
-  .why_build_title {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-  }
 }
 
 .development_steps {
@@ -563,63 +379,6 @@ p {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
-}
-@media screen and (max-width: 768px) {
-  .development_step {
-    display: none;
-  }
-
-  .step_one {
-    display: initial;
-    display: flex;
-    margin: auto;
-    width: 85%;
-    background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
-    padding: 10px 20px 10px 20px;
-    border-radius: 40px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-top: 8%;
-    justify-content: center;
-  }
-  .step_one p {
-    font-size: 0.8rem;
-  }
-
-  .simulation_left_right_icon {
-    display: initial;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2%;
-  }
-  .simulation_left {
-    height: 70px;
-    width: 70px;
-    color: white;
-    border-radius: 50%;
-    border: 9px solid #211e2e;
-    background: linear-gradient(90deg, #4f4773 0%, #c0b7e8 100%);
-  }
-  .simulation_right {
-    border-radius: 50%;
-    border: 9px solid #211e2e;
-    background: linear-gradient(90deg, #69608e 0%, #c0b7e8 100%);
-    height: 70px;
-    width: 70px;
-  }
-  .simulation_left img {
-    width: 94%;
-  }
-  .simulation_right img {
-    width: 94%;
-    margin-left: 5%;
-  }
-  .development_step button {
-    width: 75%;
-    height: 43px;
-  }
 }
 
 .technologies_hardware {
@@ -690,50 +449,6 @@ p {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .technologies_hardware_background img {
-    width: 100%;
-    border-radius: 200px;
-    height: 160px;
-    object-fit: cover;
-  }
-  .technologies_hardware_background {
-    margin-top: 10%;
-  }
-
-  .technologies_hardware_title h3,
-  h2 {
-    font-size: 1.2rem;
-  }
-  .technologies_hardware_brand img {
-    display: none;
-    margin: 0;
-  }
-  .technologies_hardware_brand {
-    display: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .technologies_hardware_brand .last_brand {
-    display: initial;
-    display: flex;
-  }
-  .build_title_left img {
-    display: none;
-  }
-  .build_title_right {
-    display: none;
-  }
-  .build_title_left {
-    display: flex;
-    text-align: center;
-  }
-  .build_title {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .hydra_process {
   width: 100%;
   display: flex;
@@ -789,27 +504,6 @@ p {
   font-weight: 600;
   width: 100%;
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .step {
-    display: none;
-  }
-  .step_first {
-    display: initial;
-    width: 100%;
-  }
-  .circle {
-    width: 215px;
-    height: 215px;
-    border: 17px solid #00000052;
-    font-size: 3rem;
-  }
-  .step_first p {
-    font-size: 1.5rem;
-    margin-bottom: 50px;
-    margin-top: 30px;
-  }
 }
 
 .join_hydra {
@@ -876,34 +570,6 @@ p {
   margin-top: 2%;
 }
 
-@media screen and (max-width: 768px) {
-  .first_table input {
-    width: 80%;
-    margin: 2%;
-    padding: 4%;
-  }
-  .join_hydra {
-    width: 90%;
-    border-radius: 40px;
-    margin: auto;
-  }
-  .third_table textarea {
-    padding: 5%;
-    border-radius: 30px;
-    margin: 2%;
-    height: 200px;
-  }
-  .second_table input {
-    width: 80%;
-    margin: 2%;
-    padding: 4%;
-  }
-  .hydra_table_button {
-    width: 80%;
-    color: #211e2e;
-  }
-}
-
 .services {
   width: 100%;
   height: 200px;
@@ -957,10 +623,364 @@ p {
   font-weight: 600;
 }
 
+/*Header responsive start*/
+
 @media screen and (max-width: 768px) {
+  .header_items_menu {
+    display: none;
+  }
+  .header_items_button {
+    display: none;
+  }
+  .container {
+    padding: 0 3%;
+  }
+  body,
+  html {
+    padding-top: 11px;
+    padding-left: 0;
+    background-color: #302c42;
+    font-family: "Montserrat", serif;
+    height: 2000px;
+  }
+  .header_items_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hamburger_menu_icon {
+    display: initial;
+  }
+
+  /*Header responsive finished*/
+
+  /*Advertising responsive start*/
+
+  .advertising {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column-reverse;
+  }
+  .advertising_img {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 7%;
+  }
+  .advertising_img_background {
+    position: absolute;
+    margin-top: 2%;
+    width: 90%;
+    margin-left: 2%;
+  }
+  .advertising_info p {
+    display: none;
+  }
+  .advertising_info h3 {
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+  }
+  .arrow_icon {
+    display: none;
+  }
+  .button_arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+  }
+  .advertising_button {
+    width: 85%;
+  }
+
+  /*Advertising responsive finished*/
+
+  /*Contact and introduction responsive start*/
+
+  .contact {
+    height: 110px;
+    margin-top: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left_right_icon {
+    display: initial;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .contact_call {
+    display: none;
+  }
+  .contact_message {
+    display: none;
+  }
+  .contact_location {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_location h3 {
+    display: none;
+  }
+  .contact_location p {
+    width: 90%;
+    line-height: 20px;
+  }
+  .contact .contact_location {
+    border-right: 0;
+  }
+  .contact_location img {
+    width: 20%;
+    margin-left: 9%;
+    padding-left: 9%;
+  }
+  .introduction_title_left img {
+    display: none;
+  }
+  .introduction_title_right {
+    display: none;
+  }
+  .introduction_title_left {
+    display: flex;
+    text-align: center;
+  }
+  .introduction_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  /*Contact and introduction responsive finished*/
+
+  /*About and build responsive start*/
+
+  .about_hydra {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_hydra_img img {
+    margin-top: 3.5%;
+    width: 100%;
+    height: 407px;
+  }
+  .about_hydra_title h2 {
+    display: none;
+  }
+  .about_hydra_title h3 {
+    display: none;
+  }
+  .about_hydra_title {
+    width: 91%;
+  }
+  .about_hydra_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+  }
+
+  .about_hydra_title p {
+    text-align: center;
+  }
+  .about_hydra_button_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .why_build_title_left img {
+    display: none;
+  }
+  .why_build_title_right {
+    display: none;
+  }
+  .why_build_title_left {
+    display: flex;
+    text-align: center;
+  }
+  .why_build_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  /*About and build responsive finished*/
+
+  /*Development and simulation responsive start*/
+
+  .development_step {
+    display: none;
+  }
+  .step_one {
+    display: initial;
+    display: flex;
+    margin: auto;
+    width: 85%;
+    background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 8%;
+    justify-content: center;
+  }
+  .step_one p {
+    font-size: 0.8rem;
+  }
+
+  .simulation_left_right_icon {
+    display: initial;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+  }
+  .simulation_left {
+    height: 70px;
+    width: 70px;
+    color: white;
+    border-radius: 50%;
+    border: 9px solid #211e2e;
+    background: linear-gradient(90deg, #4f4773 0%, #c0b7e8 100%);
+  }
+  .simulation_right {
+    border-radius: 50%;
+    border: 9px solid #211e2e;
+    background: linear-gradient(90deg, #69608e 0%, #c0b7e8 100%);
+    height: 70px;
+    width: 70px;
+  }
+  .simulation_left img {
+    width: 94%;
+  }
+  .simulation_right img {
+    width: 94%;
+    margin-left: 5%;
+  }
+  .development_step button {
+    width: 75%;
+    height: 43px;
+  }
+
+  /*Development and simulation responsive finished*/
+
+  /*Technologies and hardware responsive start*/
+
+  .technologies_hardware_background img {
+    width: 100%;
+    border-radius: 200px;
+    height: 160px;
+    object-fit: cover;
+  }
+  .technologies_hardware_background {
+    margin-top: 10%;
+  }
+
+  .technologies_hardware_title h3,
+  h2 {
+    font-size: 1.2rem;
+  }
+  .technologies_hardware_brand img {
+    display: none;
+    margin: 0;
+  }
+  .technologies_hardware_brand {
+    display: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .technologies_hardware_brand .last_brand {
+    display: initial;
+    display: flex;
+  }
+  .build_title_left img {
+    display: none;
+  }
+  .build_title_right {
+    display: none;
+  }
+  .build_title_left {
+    display: flex;
+    text-align: center;
+  }
+  .build_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Technologies and hardware responsive finished*/
+
+  /*Step-circle responsive start*/
+
+  .step {
+    display: none;
+  }
+  .step_first {
+    display: initial;
+    width: 100%;
+  }
+  .circle {
+    width: 215px;
+    height: 215px;
+    border: 17px solid #00000052;
+    font-size: 3rem;
+  }
+  .step_first p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  /*Step-circle responsive finished*/
+
+  /*Join-hydra responsive start*/
+
+  .first_table input {
+    width: 80%;
+    margin: 2%;
+    padding: 4%;
+  }
+  .join_hydra {
+    width: 90%;
+    border-radius: 40px;
+    margin: auto;
+  }
+  .third_table textarea {
+    padding: 5%;
+    border-radius: 30px;
+    margin: 2%;
+    height: 200px;
+  }
+  .second_table input {
+    width: 80%;
+    margin: 2%;
+    padding: 4%;
+  }
+  .hydra_table_button {
+    width: 80%;
+    color: #211e2e;
+  }
+
   .join_hydra img {
     width: 100%;
   }
+
+  /*Join-hydra responsive finished*/
+
+  /*Services and footer responsive start*/
 
   .services {
     width: 100%;
@@ -995,3 +1015,5 @@ p {
     margin: auto;
   }
 }
+
+/*Services and footer responsive finished*/

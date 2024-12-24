@@ -23,6 +23,9 @@ li {
 li a {
   color: black;
   font-size: 0.9rem;
+  transition: 0.3s;
+  border-radius: 24px;
+
   font-weight: 450;
 }
 li a:hover {

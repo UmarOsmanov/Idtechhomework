@@ -12,7 +12,7 @@ html {
 .container {
   width: 100%;
   max-width: 1580px;
-  padding: 30px 5%;
+  padding: 30px 68px;
 }
 a {
   text-decoration: none;
@@ -337,9 +337,9 @@ p {
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
   padding: 10px 20px 10px 20px;
   border-radius: 40px;
-  margin-top: 5%;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  margin-top: 60px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .simulation_left_right_icon {
   display: none;
@@ -364,7 +364,7 @@ p {
   margin: 25px 0 25px 0;
 }
 .development_step button {
-  margin-bottom: 5%;
+  margin-bottom: 15px;
   width: 60%;
   height: 35px;
   border-radius: 40px;
@@ -396,7 +396,7 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 1.5%;
+  margin-top: 18px;
 }
 .technologies_hardware_background img {
   width: 100%;
@@ -417,8 +417,8 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 3%;
-  margin-bottom: 2%;
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .build_title {
@@ -435,7 +435,7 @@ p {
   color: white;
 }
 .build_title_left img {
-  margin-bottom: -8%;
+  margin-bottom: -40px;
   margin-left: 35px;
 }
 .build_title_left {
@@ -453,7 +453,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 6%;
+  margin-top: 65px;
 }
 
 .hydra_process h1 {
@@ -518,20 +518,20 @@ p {
   margin: 20px 0 20px 0;
 }
 .join_hydra h3 {
-  margin-bottom: 5%;
+  margin-bottom: 60px;
   font-weight: 300;
   font-size: 1.5rem;
 }
 .join_hydra h2 {
-  padding-top: 5%;
+  padding-top: 60px;
 }
 
 .first_table input {
-  padding: 1.2%;
+  padding: 14px;
   width: 40%;
   border-radius: 20px;
   border: 1.5px solid white;
-  margin: 1%;
+  margin: 10px;
   background: none;
   color: white;
   outline: none;
@@ -540,8 +540,8 @@ p {
   width: 82.4%;
   border-radius: 20px;
   border: 1.5px solid white;
-  padding: 1.2%;
-  margin: 1%;
+  padding: 14px;
+  margin: 13px;
   background: none;
   color: white;
   outline: none;
@@ -553,8 +553,8 @@ p {
   max-height: 200px;
   border-radius: 40px;
   border: 1.5px solid white;
-  padding: 1.2%;
-  margin: 1%;
+  padding: 14px;
+  margin: 13px;
   background: none;
   color: white;
   outline: none;
@@ -567,7 +567,7 @@ p {
   border-radius: 40px;
   font-size: 0.7rem;
   font-weight: 500;
-  margin-top: 2%;
+  margin-top: 25px;
 }
 
 .services {
@@ -585,7 +585,7 @@ p {
   width: 25%;
 }
 .footer_vector {
-  margin-right: 5%;
+  margin-right: 60px;
 }
 .footer_about {
   width: 25%;
@@ -606,7 +606,7 @@ p {
   border-radius: 40px;
   font-size: 0.7rem;
   font-weight: 500;
-  margin-top: 2%;
+  margin-top: 5px;
 }
 .sosial_logo {
   margin: 30px 0 30px 0;
@@ -633,7 +633,7 @@ p {
     display: none;
   }
   .container {
-    padding: 0 3%;
+    padding: 0 15px;
   }
   body,
   html {
@@ -665,14 +665,11 @@ p {
   .advertising_img {
     position: relative;
     width: 100%;
-
-    margin-bottom: 7%;
+    margin-bottom: 50px;
   }
   .advertising_img_background {
     position: absolute;
-    margin-top: 2%;
     width: 90%;
-    margin-left: 2%;
   }
   .advertising_info p {
     display: none;
@@ -692,10 +689,11 @@ p {
   .button_arrow {
     display: flex;
     justify-content: center;
-    margin-top: 6%;
   }
   .advertising_button {
     width: 85%;
+    height: 50px;
+    margin-top: 28px;
   }
 
   /*Advertising responsive finished*/
@@ -704,7 +702,6 @@ p {
 
   .contact {
     height: 110px;
-    margin-top: 11%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -742,8 +739,8 @@ p {
   }
   .contact_location img {
     width: 20%;
-    margin-left: 9%;
-    padding-left: 9%;
+    margin-left: 18px;
+    padding-left: 20px;
   }
   .introduction_title_left img {
     display: none;
@@ -758,7 +755,7 @@ p {
   .introduction_title {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 50px;
   }
 
   /*Contact and introduction responsive finished*/
@@ -770,7 +767,6 @@ p {
     flex-direction: column;
   }
   .about_hydra_img img {
-    margin-top: 3.5%;
     width: 100%;
     height: 407px;
   }
@@ -813,7 +809,7 @@ p {
   .why_build_title {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 50px;
   }
 
   /*About and build responsive finished*/
@@ -831,9 +827,9 @@ p {
     background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
     padding: 10px 20px 10px 20px;
     border-radius: 40px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-top: 8%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
     justify-content: center;
   }
   .step_one p {
@@ -846,7 +842,7 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 2%;
+    padding: 7px;
   }
   .simulation_left {
     height: 70px;
@@ -868,7 +864,7 @@ p {
   }
   .simulation_right img {
     width: 94%;
-    margin-left: 5%;
+    margin-left: 3px;
   }
   .development_step button {
     width: 75%;
@@ -886,7 +882,7 @@ p {
     object-fit: cover;
   }
   .technologies_hardware_background {
-    margin-top: 10%;
+    margin-top: 40px;
   }
 
   .technologies_hardware_title h3,
@@ -950,24 +946,25 @@ p {
 
   .first_table input {
     width: 80%;
-    margin: 2%;
-    padding: 4%;
+    margin: 8px;
+    padding: 15px;
   }
   .join_hydra {
     width: 90%;
     border-radius: 40px;
     margin: auto;
+    height: 850px;
   }
   .third_table textarea {
-    padding: 5%;
+    padding: 16px;
     border-radius: 30px;
-    margin: 2%;
-    height: 200px;
+    margin: 10px;
+    height: 150px;
   }
   .second_table input {
     width: 80%;
-    margin: 2%;
-    padding: 4%;
+    margin: 9px;
+    padding: 15px;
   }
   .hydra_table_button {
     width: 80%;
@@ -1001,7 +998,7 @@ p {
   .footer_logo {
     width: 100%;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 35px;
   }
   .footer_sosial {
     width: 100%;
@@ -1013,6 +1010,7 @@ p {
   .container h5 {
     width: 60%;
     margin: auto;
+    padding-bottom: 30px;
   }
 }
 

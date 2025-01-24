@@ -1,0 +1,64 @@
+
+
+<!-- //Button press and up    1
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onkeydown Event</h2>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
+<script>
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+
+function keyupFunction() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+
+</body>
+</html>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+//TouchEvents numune   2
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("touchstart", (e) => {
+        console.log("start");
+      });
+
+      document.addEventListener("touchmove", (e) => {
+        console.log("move");
+      });
+
+      document.addEventListener("touchend", (e) => {
+        console.log("end");
+      });
+    </script>
+  </body>
+</html> -->
+
+

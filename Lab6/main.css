@@ -33,19 +33,25 @@
     width: 2rem;
     height: 2rem;
 }
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url(photo/pexels-melvinwahlin-2433353.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 }
 
 
 .sidebar{
-
     top: 0;
     left: 0;
-    height: 100hv;
-    width: 250px;
+    width: 270px;
     z-index: 999;
-    background-color: gray;
     box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -54,11 +60,26 @@
 }
 
 .menu{
+    height: 100%;
     position: absolute;
     left: -1050px;
-    top: 100px;
-    background-color: black;
+    top: 0px;
+    background-color: white;
+    font-size: 1.3rem;
 }
+.menu ul{
+    position: relative;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    gap: 25px;
+    list-style: none;
+}
+
 .active{
     left: 0px;
+}
+.search{
+    background-color: red;
+    color: black;
 }

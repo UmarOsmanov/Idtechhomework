@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+.header{
+    width: 100%;
+}
+.mainDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact{
+    display: flex;
+}.title{
+    font-size: 2rem;
+}
+.emart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar img{
+    width: 2rem;
+    height: 2rem;
+}
+.person_icon{
+    width: 2rem;
+    height: 2rem;
+}
+.person_icon2{
+    width: 2rem;
+    height: 2rem;
+}
+.emart_photo{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+}
+
+
+.sidebar{
+
+    top: 0;
+    left: 0;
+    height: 100hv;
+    width: 250px;
+    z-index: 999;
+    background-color: gray;
+    box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu{
+    position: absolute;
+    left: -1050px;
+    top: 100px;
+    background-color: black;
+}
+.active{
+    left: 0px;
+}

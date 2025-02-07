@@ -190,20 +190,81 @@ const ort = students.map((students) => ({
     allOrt: ort.reduce((acc, st) => acc + st.ortQiy , 0) / ort.length
   });
 
+  function getGrades(arr=[]){
+    const newArr = arr.map((item)=> (
+        {
+              name:item.name,
+              id:item.id,
+              grades:item.grades.reduce((acc, curr)=>acc+curr)/item?.grades.length }
+    ))
+      
+    return newArr
+  }
+  console.log(getGrades(students))
 
   ///////////////////////////////////////////////////////////////////////////////
 
 
-// Aşağıdakı funksiyaları yazın:
-// 1. Adi funksiya - faktorial hesablayan
-function calculateFactorial(n) {
-    // Kodunuzu buraya yazın
+// 5.1: Şərtli Operatorlar
+// 1. Rəqəmin tək və ya cüt olduğunu yoxlayan funksiya
+// 2. Üç ədəddən ən böyüyünü tapan funksiya
+// 3. İlin fəslini təyin edən funksiya (ay nömrəsinə görə)
+
+
+
+
+function newNum(x){
+    if (x%2==0){
+        console.log("eded cutdur");
+        
+    }else{
+        console.log("eded tekdir");
+        
+    }
+    
+}
+console.log(newNum(36));
+
+
+function newNumber2(x,y,z){
+    if(x>=y && x>=z){
+        return x;
+    } else if(y>=x && y>=z){
+        return y;
+    } else {
+        return z;
+    }
+}
+console.log(newNumber2(744, 7, 5));
+
+//////////////////////////////////////////////
+function season(x){
+    if(x>=3 && x<=5){
+        console.log("yaz feslidir");
+    } else if(x>=6 && x<=8){
+        console.log("yay feslidir");
+    } else if(x>=9 && x<=11){
+        console.log("payiz feslidir");
+    } else if(x==12 || x<=2){
+        console.log("qis feslidir");
+    }
+}
+console.log(season(1));
+
+///////////////////////////////////////
+
+
+function sadeEded(x) {
+   if (x <= 1){
+    return false
+   }
+   for(i=2 ; i<x ; i++){
+       if(x%i!=0){
+        return true;
+       } else {
+        return false;
+       }
+   }
 }
 
-// 2. Arrow function - ədədin kvadratını qaytaran
-const square = // Kodunuzu buraya yazın
-
-// 3. Higher-order function - array-i filter edən funksiya qəbul edən və tətbiq edən
-function filterArray(arr, filterFn) {
-    // Kodunuzu buraya yazın
-}
+console.log(sadeEded(11));

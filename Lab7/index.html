@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cards"></div>
+    <hr />
+    <div class="wishList"></div>
+
+    <script>
+      const Cards = document.querySelector(".cards");
+      const WishList = document.querySelector(".wishList");
+
+      let wishList = [];
+      let products = [
+        { id: 1, name: "Iphone" },
+        { id: 2, name: "Samsung" },
+        { id: 3, name: "Huawei" },
+        { id: 4, name: "Nokia" },
+        { id: 5, name: "Xiaomi" },
+      ];
+
+      function renderWishList () {
+        WishList.innerHTML = "";
+
+        wishList.forEach((product) => {
+          const CardItem = document.createElement("div");
+          CardItem.innerHTML = `<p> ${product.name} </p>`;
+          WishList.appendChild(CardItem);
+        });
+      }
+
+      const addProductToWishList = (product) => {
+        const incideVarBlettt = wishList.some((prod) => prod.id === product.id);
+
+        if(incideVarBlettt){
+            wishList = wishList.filter(prod => prod.id !== product.id);
+        }
+        else {
+            wishList.push(product);
+        }
+        
+        renderWishList();
+      };
+
+      // Wirite card Item to DOM
+      products.forEach((product) => {
+        const CardItem = document.createElement("div");
+        CardItem.innerHTML = `<p> ${product.name} </p>`;
+        CardItem.addEventListener("click", () => addProductToWishList(product));
+        Cards.appendChild(CardItem);
+      });
+    </script>
+  </body>
+</html>

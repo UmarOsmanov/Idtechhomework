@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+
+
+    
+
+
+
+
+
+
+    <script>
+          let students = [
+    {id: 1, name: "Aygün", grades: [85, 90, 92]},
+    {id: 2, name: "Elçin", grades: [75, 85, 88]},
+    {id: 3, name: "Nigar", grades: [95, 88, 91]},
+    {id: 4, name: "Orxan", grades: [70, 65, 72]}
+];
+
+  function getGrades(arr=[]){
+    const newArr = arr.map((item)=> (
+        {
+              name:item.name,
+              id:item.id,
+              grades:item.grades.reduce((acc, curr)=>acc+curr)/item?.grades.length }
+    ))
+      
+    return newArr
+  }
+  console.log(getGrades(students))
+
+
+
+
+//           let students = [
+//     {id: 1, name: "Aygün", grades: [85, 90, 92]},
+//     {id: 2, name: "Elçin", grades: [75, 85, 88]},
+//     {id: 3, name: "Nigar", grades: [95, 88, 91]},
+//     {id: 4, name: "Orxan", grades: [70, 65, 72]}
+// ];
+
+
+
+// function getGrades(arr=[]){
+// const newArr = arr.map((item) => {
+
+// })
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

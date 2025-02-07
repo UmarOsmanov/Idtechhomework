@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    // <div id="container">
+        //   <h1 class="title">Salam Dünya</h1>
+        //   <p class="text">Bu bir paraqrafdır</p>
+        //   <ul id="list">
+        //     <li>Element 1</li>
+        //     <li>Element 2</li>
+        //     <li>Element 3</li>
+        //   </ul>
+        // </div>
+
+
+        // Tələb olunan əməliyyatlar:
+// 1. getElementById ilə elementi tapın və mətnini dəyişin
+// 2. querySelector ilə elementi tapın və class əlavə edin
+// 3. Yeni element yaradın və DOM-a əlavə edin
+// 4. Elementi silin
+// 5. Element attributlarını dəyişin
+
+
+
+<script>
+
+// Tələb olunan əməliyyatlar:
+// 1. getElementById ilə elementi tapın və mətnini dəyişin
+// 2. querySelector ilə elementi tapın və class əlavə edin
+// 3. Yeni element yaradın və DOM-a əlavə edin
+// 4. Elementi silin
+// 5. Element attributlarını dəyişin
+
+
+let newText = document.getElementById("container");
+newText.querySelector("h1").innerText = ("salam");
+
+newText.querySelector("p").classList.add('highlight');
+
+newText = document.createElement("h6");
+newText.innerText = "dfjhbsdfhjsdbfhsdb";
+container.appendChild(newText);
+ 
+
+let newColor = document.querySelector("h1")
+newColor.style.color = "red"
+newColor.style.fontSize = "10rem"
+console.log(newColor);
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+// Verilmiş dəyişənləri müvafiq tiplərə çevirin və nəticəni yoxlayın
+let numString = "42";
+let boolString = "true";
+let mixedArray = ["123", "456", "789"];
+let nullValue = null;
+
+// Tələb olunan çevirmələr:
+// 1. numString -> number
+// 2. boolString -> boolean
+// 3. mixedArray elementlərini number tipinə çevirin
+// 4. nullValue-nu boolean-a çevirin və nəticəni izah edin
+
+
+let newString = Number(numString);
+let newString2 = parseInt(numString);
+console.log(newString,newString2);
+
+let newBoll = Boolean(boolString)
+console.log(boolString);
+
+let newArr = mixedArray.map((item)=> Number(item))
+console.log(newArr);
+
+let newNull = Boolean(nullValue)
+console.log(newNull);
+
+
+
+// Verilmiş dəyişənlərin tiplərini müəyyən edin
+let sample1 = NaN;
+let sample2 = [1, 2, 3];
+let sample3 = "";
+let sample4 = 0;
+let sample5 = {name: "John"};
+
+// Hər bir dəyişən üçün:
+// 1. typeof operatorundan istifadə edin
+// 2. instanceof ilə yoxlayın (array və obyektlər üçün)
+// 3. Array.isArray() metodundan istifadə edin (array-lər üçün)
+
+let newSample1 = typeof(sample1);
+console.log(newSample1);
+
+let newSample2 = typeof(sample2);
+console.log(newSample2);
+
+let newSample3 = typeof(sample3);
+console.log(newSample3);
+
+let newSample4 = typeof(sample4);
+console.log(newSample4);
+
+let newSample5 = typeof(sample5);
+console.log(newSample5);
+
+
+
+
+console.log(newSample2 instanceof Array);
+console.log(newSample2 instanceof Object);
+
+console.log(newSample5 instanceof Array);
+console.log(newSample5 instanceof Object);
+
+
+
+console.log(Array.isArray(sample2));
+
+
+
+////////////////////////////////////////////
+
+let text = "   JavaScript is awesome   ";
+
+// Tələb olunan əməliyyatlar:
+// 1. Mətndəki boşluqları silin
+// 2. Mətni böyük hərflərə çevirin
+// 3. "is" sözünü "was" ilə əvəz edin
+// 4. Mətni sözlərə ayırın və array kimi saxlayın
+// 5. Mətnin uzunluğunu tapın
+let newText = text.trim()
+let newText2 = newText.replace(/\s+/g, '').toUpperCase()
+let newText3 = newText2.replace("IS","WAS")
+let newtext4 = newText3.split("")
+console.log(newtext4, (newtext4.length));
+
+
+
+
+
+// Verilmiş məlumatlardan istifadə edərək şablon yaradın
+let user = {
+    firstName: "Ali",
+    lastName: "Məmmədov",
+    age: 25,
+    email: "ali@example.com"
+};
+
+
+// Template literal-dan istifadə edərək:
+// 1. "Hörmətli {tam_ad}, sizin {yaş} yaşınız var." formatında mətn yaradın
+// 2. İstifadəçi haqqında məlumatları cədvəl formasında göstərin
+// 3. Email ünvanını @ simvoluna görə ayırın
+
+console.log(`Hormetli ${user.firstName} ,sizin ${user.age} yasiniz var`);
+console.table(user);
+console.log(user.email.split("@"));
+
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let fruits = ["alma", "armud", "banan", "gilas", "üzüm"];
+
+// Tələb olunan əməliyyatlar:
+// 1. Cüt ədədləri filter() ilə tapın
+// 2. Hər ədədin kubunu map() ilə hesablayın
+// 3. Ədədlərin cəmini reduce() ilə tapın
+// 4. Meyvələri əlifba sırası ilə düzün
+// 5. Array-ə yeni elementlər əlavə edin və silin (push, pop, shift, unshift)
+
+
+
+let cutReqem = numbers.filter((item) => item%2==0)
+console.log(cutReqem);
+
+let kub = numbers.map((item) => item**3)
+console.log(kub);
+
+let cem = numbers.reduce((curr,acc) => curr+acc,0)
+console.log(cem);
+
+let cesidleme = fruits.sort((a,b) => a-b)
+console.log(cesidleme);
+
+let newArrr = fruits.pop()
+console.log(newArrr);
+
+let newArrr2 = fruits.unshift("xurma")
+console.log(newArrr2);
+
+
+
+
+
+let students = [
+    {id: 1, name: "Aygün", grades: [85, 90, 92]},
+    {id: 2, name: "Elçin", grades: [75, 85, 88]},
+    {id: 3, name: "Nigar", grades: [95, 88, 91]},
+    {id: 4, name: "Orxan", grades: [70, 65, 72]}
+];
+
+// Tələb olunan əməliyyatlar:
+// 1. Hər tələbənin orta qiymətini hesablayın
+// 2. 85-dən yuxarı orta qiyməti olan tələbələri tapın
+// 3. Tələbələri orta qiymətə görə çoxdan aza düzün
+// 4. Bütün tələbələrin ümumi orta qiymətini tapın
+
+
+// 1. Orta qiymətləri hesabla
+// students.forEach(student => {
+//     student.average = student.grades.reduce((a, b) => a + b) / student.grades.length;
+// });
+
+// console.log(students);
+
+// students.forEach(student => {
+//     student.ortaQiy = student.grades.reduce((a,b) => a+b)
+// })
+//   let orta = students
+// console.log(orta);
+
+// let newNum = orta.filter((item) => item > 85)
+// console.log(newNum);
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
+// 5.1: Şərtli Operatorlar
+// 1. Rəqəmin tək və ya cüt olduğunu yoxlayan funksiya
+// 2. Üç ədəddən ən böyüyünü tapan funksiya
+// 3. İlin fəslini təyin edən funksiya (ay nömrəsinə görə)
+// 4. Sadə kalkulyator (switch-case ilə)
+
+// 5.2: Dövrlər
+// 1. Fibonaççi ardıcıllığını çap edən proqram (for)
+// 2. Array elementlərini tərsinə çap edən proqram (while)
+// 3. Sadə ədədləri tapan proqram
+// 4. Pattern çap edən proqram (ulduzlarla üçbucaq)
+
+
+
+function newNum(x){
+    if (x%2==0){
+        console.log("eded cutdur");
+        
+    }else{
+        console.log("eded tekdir");
+        
+    }
+    
+}
+console.log(newNum(36));
+
+
+function newNumber2(x,y,z){
+    if(x>=y && x>=z){
+        return x;
+    } else if(y>=x && y>=z){
+        return y;
+    } else {
+        return z;
+    }
+}
+console.log(newNumber2(744, 7, 5));
+
+//////////////////////////////////////////////
+function season(x){
+    if(x>=3 && x<=5){
+        console.log("yaz feslidir");
+    } else if(x>=6 && x<=8){
+        console.log("yay feslidir");
+    } else if(x>=9 && x<=11){
+        console.log("payiz feslidir");
+    } else if(x==12 || x<=2){
+        console.log("qis feslidir");
+    }
+}
+console.log(season(1));
+
+///////////////////////////////////////
+
+
+function sadeEded(x) {
+   if (x <= 1){
+    return false
+   }
+   for(i=2 ; i<x ; i++){
+       if(x%i!=0){
+        return true;
+       } else {
+        return false;
+       }
+   }
+}
+
+console.log(sadeEded(11));
+
+
+
+// function sadeEded(x){
+//     if (x <= 1){
+//         return false;
+//     }
+//     for(i=2;i<x;i++){
+//         if(x%i=== 0){
+//             return false;
+//         } else {
+//             return true;
+//         }
+//     }
+// }
+// console.log(sadeEded(12));
+
+
+//     </script>
+// </body>
+// </html>
+
+
+
+
+
+
+
+
+# JavaScript Praktiki Tapşırıqlar
+
+## Mündəricat
+1. Dəyişənlər və Tip Çevirmələri
+2. String Metodları
+3. Array (Massiv) Metodları
+4. Funksiyalar
+5. Obyektlər
+6. Şərtlər və Dövrlər
+7. DOM Manipulyasiyası
+8. Event Handling
+9. Praktiki Layihələr
+
+## 1. Dəyişənlər və Tip Çevirmələri
+
+### Tapşırıq 1.1: Tip Çevirmələri
+
+// Verilmiş dəyişənləri müvafiq tiplərə çevirin və nəticəni yoxlayın
+let numString = "42";
+let boolString = "true";
+let mixedArray = ["123", "456", "789"];
+let nullValue = null;
+
+// Tələb olunan çevirmələr:
+// 1. numString -> number
+// 2. boolString -> boolean
+// 3. mixedArray elementlərini number tipinə çevirin
+// 4. nullValue-nu boolean-a çevirin və nəticəni izah edin
+
+
+### Tapşırıq 1.2: Tip Yoxlaması
+// Verilmiş dəyişənlərin tiplərini müəyyən edin
+let sample1 = NaN;
+let sample2 = [1, 2, 3];
+let sample3 = "";
+let sample4 = 0;
+let sample5 = {name: "John"};
+
+// Hər bir dəyişən üçün:
+// 1. typeof operatorundan istifadə edin
+// 2. instanceof ilə yoxlayın (array və obyektlər üçün)
+// 3. Array.isArray() metodundan istifadə edin (array-lər üçün)
+
+## 2. String Metodları
+
+### Tapşırıq 2.1: Mətn Manipulyasiyası
+let text = "   JavaScript is awesome   ";
+
+// Tələb olunan əməliyyatlar:
+// 1. Mətndəki boşluqları silin
+// 2. Mətni böyük hərflərə çevirin
+// 3. "is" sözünü "was" ilə əvəz edin
+// 4. Mətni sözlərə ayırın və array kimi saxlayın
+// 5. Mətnin uzunluğunu tapın
+
+### Tapşırıq 2.2: Şablon Yaratma
+// Verilmiş məlumatlardan istifadə edərək şablon yaradın
+let user = {
+    firstName: "Ali",
+    lastName: "Məmmədov",
+    age: 25,
+    email: "ali@example.com"
+};
+
+// Template literal-dan istifadə edərək:
+// 1. "Hörmətli {tam_ad}, sizin {yaş} yaşınız var." formatında mətn yaradın
+// 2. İstifadəçi haqqında məlumatları cədvəl formasında göstərin
+// 3. Email ünvanını @ simvoluna görə ayırın
+
+## 3. Array Metodları
+
+### Tapşırıq 3.1: Array Əməliyyatları
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let fruits = ["alma", "armud", "banan", "gilas", "üzüm"];
+
+// Tələb olunan əməliyyatlar:
+// 1. Cüt ədədləri filter() ilə tapın
+// 2. Hər ədədin kubunu map() ilə hesablayın
+// 3. Ədədlərin cəmini reduce() ilə tapın
+// 4. Meyvələri əlifba sırası ilə düzün
+// 5. Array-ə yeni elementlər əlavə edin və silin (push, pop, shift, unshift)
+
+### Tapşırıq 3.2: Array-lərlə Mürəkkəb Əməliyyatlar
+let students = [
+    {id: 1, name: "Aygün", grades: [85, 90, 92]},
+    {id: 2, name: "Elçin", grades: [75, 85, 88]},
+    {id: 3, name: "Nigar", grades: [95, 88, 91]},
+    {id: 4, name: "Orxan", grades: [70, 65, 72]}
+];
+
+// Tələb olunan əməliyyatlar:
+// 1. Hər tələbənin orta qiymətini hesablayın
+// 2. 85-dən yuxarı orta qiyməti olan tələbələri tapın
+// 3. Tələbələri orta qiymətə görə çoxdan aza düzün
+// 4. Bütün tələbələrin ümumi orta qiymətini tapın
+
+## 4. Funksiyalar
+
+### Tapşırıq 4.1: Funksiya Növləri
+// Aşağıdakı funksiyaları yazın:
+// 1. Adi funksiya - faktorial hesablayan
+function calculateFactorial(n) {
+    // Kodunuzu buraya yazın
+}
+
+// 2. Arrow function - ədədin kvadratını qaytaran
+const square = // Kodunuzu buraya yazın
+
+// 3. Higher-order function - array-i filter edən funksiya qəbul edən və tətbiq edən
+function filterArray(arr, filterFn) {
+    // Kodunuzu buraya yazın
+}
+
+
+
+## 4. Obyektlər
+### Tapşırıq 4.1: Obyekt Yaratma və Metodlar
+
+// Bank hesabı obyekti yaradın
+let bankAccount = {
+    // Properties:
+    // - hesab nömrəsi
+    // - sahibinin adı
+    // - balans
+    // - əməliyyatlar array-i
+   
+    // Metodlar:
+    // - pul əlavə etmə
+    // - pul çıxarma
+    // - balans yoxlama
+    // - əməliyyat tarixçəsi
+};
+
+## 5. Şərtlər və Dövrlər
+
+### Tapşırıq 5.1: Şərtli Operatorlar
+// 1. Rəqəmin tək və ya cüt olduğunu yoxlayan funksiya
+// 2. Üç ədəddən ən böyüyünü tapan funksiya
+// 3. İlin fəslini təyin edən funksiya (ay nömrəsinə görə)
+// 4. Sadə kalkulyator (switch-case ilə)
+
+### Tapşırıq 5.2: Dövrlər
+// 1. Fibonaççi ardıcıllığını çap edən proqram (for)
+// 2. Array elementlərini tərsinə çap edən proqram (while)
+// 3. Sadə ədədləri tapan proqram
+// 4. Pattern çap edən proqram (ulduzlarla üçbucaq)
+
+## 6. DOM Manipulyasiyası
+
+### Tapşırıq: Element Seçimi və Dəyişiklik
+
+// HTML:
+// <div id="container">
+//   <h1 class="title">Salam Dünya</h1>
+//   <p class="text">Bu bir paraqrafdır</p>
+//   <ul id="list">
+//     <li>Element 1</li>
+//     <li>Element 2</li>
+//     <li>Element 3</li>
+//   </ul>
+// </div>
+
+// Tələb olunan əməliyyatlar:
+// 1. getElementById ilə elementi tapın və mətnini dəyişin
+// 2. querySelector ilə elementi tapın və class əlavə edin
+// 3. Yeni element yaradın və DOM-a əlavə edin
+// 4. Elementi silin
+// 5. Element attributlarını dəyişin
+
+
+
+## 7. Event Handling
+
+### Tapşırıq: Event Listeners
+
+// 1. Click event handler
+document.getElementById('button').addEventListener('click', function() {
+    // Kodunuzu buraya yazın
+});
+
+// 2. Form submission
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    // Kodunuzu buraya yazın
+});
+
+// 3. Klaviatura eventləri
+document.addEventListener('keydown', function(e) {
+    // Kodunuzu buraya yazın
+});
+
+// 4. Mouse eventləri
+element.addEventListener('mouseover', function(e) {
+    // Kodunuzu buraya yazın
+});

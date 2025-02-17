@@ -1,6 +1,7 @@
-let touchButton = document.querySelector(".touchButton");
-let titleOne = document.querySelector(".titleOne");
+const headers = document.querySelectorAll(".accordion-item-header");
 
-touchButton.addEventListener("click", () => {
-  titleOne.classList.toggle("active");
+headers.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
 });

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.mainHeader {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.employeeAdd {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.employeeAddForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.employeeAddFormFields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+}
+.employeeAddForm input {
+    padding: 5px;
+    margin-block: 10px;
+    width: 45%;
+}
+
+.employeeAddButton {
+    padding: 7px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+
+.employeeAddResult {
+    border: 1px solid gray;
+    height: 150px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultRow {
+    background-color: rgb(211, 211, 211);
+    height: 3rem;
+}
+
+.resultRowTwo {
+    background-color: rgb(247, 247, 247);
+    height: 3rem;
+}
+
+.resultButtonAccept {
+    padding: 6px;
+    background-color: rgb(1, 138, 35);
+    border: none;
+    margin-right: 10px;
+    color: white;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.resultButtonCancel {
+    padding: 6px;
+    background-color: rgb(211, 10, 10);
+    border: none;
+    color: white;
+    width: 70px;
+    border-radius: 3px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        margin: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    .employeeAdd {
+        border: 1px solid gray;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+
+
+
+    .employeeAddForm input {
+        width: 100%;
+        padding: 10px;
+        margin-block: 10px;
+        border: 2px solid;
+        border-color: gray;
+    }
+
+    .formSelect {
+        width: 100%;
+        /* padding: 10px;    */
+        /* margin-block: 10px; */
+        border: 2px solid;
+        border-color: gray;
+        height: 30px;
+    }
+
+    .employeeAddButton {
+        display: flex;
+        margin: auto;
+    }
+
+
+    .mainHeader {
+        text-align: center;
+    }
+
+
+    .employeeAddForm p {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .employeeAddResult {
+        overflow: scroll;
+    }
+
+    .employeeTable{
+        min-width: 500px;
+    }
+
+}

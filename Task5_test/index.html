@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Form Bölmesi -->
+  <form id="employee-form">
+    <label for="name">Ad və Soyad</label>
+    <input type="text" id="name" placeholder="Ad və Soyad" required>
+
+    <label for="age">Yaş</label>
+    <input type="number" id="age" placeholder="Yaş" required >
+
+    <label for="position">Vəzifə</label>
+    <input type="text" id="position" placeholder="Vəzifə" required>
+
+    <label for="experience">Təcrübə (illər)</label>
+    <input type="number" id="experience" placeholder="Təcrübə" required >
+
+    <label for="skills">Bacariqlar</label>
+    <select id="skills">
+      <option value="JavaScript">JavaScript</option>
+      <option value="CSS">CSS</option>
+      <option value="HTML">HTML</option>
+      <option value="React">React</option>
+    </select>
+
+    <label for="date">İşə başlama tarixi</label>
+    <input type="date" id="date" required>
+
+    <button id="clickBtn" type="submit">İşçi Ekle</button>
+  </form>
+
+  <!-- Tablonun Görünümü -->
+  <h2>İşçi Listesi</h2>
+  <table id="employee-table">
+    <thead>
+      <tr>
+        <th>Ad Soyad</th>
+        <th>Yaş</th>
+        <th>Vəzifə</th>
+        <th>Təcrübə</th>
+        <th>Bacariqlar</th>
+        <th>İşə Başlama Tarixi</th>
+        <th>İşlemler</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- İşçi Verileri Burada Listelenecek -->
+    </tbody>
+  </table>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

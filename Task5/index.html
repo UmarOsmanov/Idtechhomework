@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mainHeader">
+            <h3>Isci Idareetme Sistemi</h3>
+        </div>
+
+        <div class="wrapper">
+            <div>
+                <div class="employeeAdd">
+                    <p>Yeni Isci Elave Et</p>
+                    <form class="employeeAddForm" >
+                        <div class="employeeAddFormFields">
+                            <input name="fullname" type="text" placeholder="Ad ve Soyad" required>
+                            <input name="age" type="number" placeholder="Yas" required>
+                            <input name="position" type="text" placeholder="Vezife" required>
+                            <input name="experiance" type="number" placeholder="Tecrube(iller)" required>
+                            <!-- <input name="skills" type="text" placeholder="Bacariqlar" required> -->
+                             <select name="skills" class="formSelect">
+                                <option value="programmer">Programist</option>
+                                <option value="kellepasca">KellePaca</option>
+                                <option value="amtor">Amtor</option>
+                                <option value="amtoparator">Amparator</option>
+                                <option value="ambiti">Ambiti</option>
+                             </select>
+                            <input name="startDate" type="date" placeholder="Ise baslama tarixi" required>
+                        </div>
+                        <button type="submit" class="employeeAddButton">Elave Et</button>
+                    </form>
+        
+                </div>
+            </div>
+    
+    
+            <div class="employeeAddResult">
+                <table class="employeeTable" style="text-align: center;border-collapse: collapse;">
+                    <tr class="resultRow">
+                        <th>№</th>
+                        <th>Ad ve Soyad</th>
+                        <th>Yas</th>
+                        <th>Vezife</th>
+                        <th>Emeliyyatlar</th>
+                    </tr> 
+                </table>
+    
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

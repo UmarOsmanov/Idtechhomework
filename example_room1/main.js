@@ -70,10 +70,17 @@
 
 let buttonPlus = document.querySelector(".plusBtn");
 let inputValue = document.querySelector(".inputText");
-let newTab = document.querySelector(".newTab")
+let newTab = document.querySelector(".newTab");
+let circleBox = document.querySelector(".circleBox");
+let date = document.querySelector(".date");
+let time = document.querySelector(".time");
 
 
 let myToDo = [];
+
+date.innerHTML = new Date().toLocaleDateString("az");
+
+
 
 buttonPlus.addEventListener("click", ()=>{
     newTab.innerHTML = "";
@@ -81,18 +88,41 @@ buttonPlus.addEventListener("click", ()=>{
     inputValue.value = "";
     toDoText();
 
+    circleBox.innerHTML = myToDo.length;
+
 
 })
 
 function toDoText(){
-myToDo.map((item) => {
-    newTab.innerHTML +=  ` <li class="textList">${item}<button class="cancelBtn">x</button></li> `
+    newTab.innerHTML = ""
+    myToDo.map((item) => {
+    newTab.innerHTML +=  ` <li class="textList">${item}<button data-value="${item}" class="cancelBtn">x</button></li> `
 })
+deleteBtnListenres()
+}
+
+function deleteBtnListenres(){
+    const deleteBtns = document.querySelectorAll(".cancelBtn");
+
+    deleteBtns.forEach((el) => {
+        el.addEventListener("click", (e) => {
+            let val = e.target.dataset.value;
+
+            console.log(val)
+            
+            myToDo = myToDo.filter((value ) =>  value !== val );
+
+            console.log(myToDo)
 
 
-
+            toDoText();
+        })
+    })
 
 }
+
+
+
 
 
 

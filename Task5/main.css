@@ -57,6 +57,7 @@
     color: white;
     border-radius: 3px;
     margin-left: 12px;
+    margin-top: 10px;
 }
 
 .employeeAddResult {
@@ -95,6 +96,10 @@
     color: white;
     width: 70px;
     border-radius: 3px;
+}
+
+.formSelect{
+    width: 45%;
 }
 
 

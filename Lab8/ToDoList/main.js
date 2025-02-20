@@ -88,8 +88,8 @@ buttonPlus.addEventListener("click", ()=>{
     inputValue.value = "";
     toDoText();
 
-    circleBox.innerHTML = myToDo.length;
-
+   
+    circleBox.innerHTML = `${myToDo.length}`;
 
 })
 
@@ -116,33 +116,9 @@ function deleteBtnListenres(){
 
 
             toDoText();
+
+            circleBox.innerHTML = `${myToDo.length}`;
         })
     })
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

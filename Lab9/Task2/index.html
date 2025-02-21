@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <title>Təxmin Oyunu</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="game-container">
+        <h1 class="title">Təxmin gücünü göstər</h1>
+        <p class="textTwo">Təxmin edə bilərsənmi ?</p>
+        <input
+          type="number"
+          id="guessInput"
+          placeholder="Ədəd daxil et"
+          min="1"
+          max="100"
+        />
+        <button class="oyna" onclick="checkGuess()">Oyna</button>
+        <button id="resetBtn" onclick="resetGame()">Yenidən Başlat</button>
+        <p id="message"></p>
+        <p class="text">Qalan şans: <span id="chances">3</span></p>
+      </div>
+    </div>
+    <img src="photo/pexels-shvetsa-6664128.jpg" alt="" />
+    <script src="main.js"></script>
+  </body>
+</html>

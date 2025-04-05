@@ -5,87 +5,32 @@ let searchButton = document.getElementById("searchButton");
 let searchInput = document.getElementById("searchInput");
 let categorySelect = document.getElementById("categorySelect");
 
+function createCard(data) {
+  return `
+  <div class="card">
+     <div class="box">
+               <img src="${data.urlToImage}" alt="">
+               <h2 class="title">
+                  <a href="${data.url}">${data.title}</a>
+               </h2>
+               <span>${data.description}</span>
+            </div>
+            </div>
+  `;
+}
+
 searchButton.addEventListener("click", function () {
-  fetch(`https://newsapi.org/v2/top-headlines/sources?apiKey=${api_key}`)
+  const category = categorySelect.value;
+  const searchTerm = searchInput.value;
+
+  fetch(
+    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}&category=${category}&q=${searchTerm}`
+  )
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      console.log({ data });
+      newsContainer.innerHTML =
+        data.articles?.map(createCard).join(" ") ??
+        "<p>Heç bir xəbər tapılmadı.</p>";
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Xəbərləri API-dan alır və ekrana göstərir
-// async function fetchNews(query = "", category = "general") {
-//     try {
-//         const response = await fetch(https://newsapi.org/v2/top-headlines?country=us&category=${category}&q=${query}&apiKey=${API_KEY});
-//         const data = await response.json();
-
-//         newsContainer.innerHTML = "";
-
-//         if (data.articles.length === 0) {
-//             newsContainer.innerHTML = "<p>Heç bir xəbər tapılmadı.</p>";
-//             return;
-//         }
-
-//         data.articles.forEach(article => {
-//             const newsItem = document.createElement("div");
-//             newsItem.classList.add("news-item");
-
-//             newsItem.innerHTML = `
-//                 <img src="${article.urlToImage || 'https://via.placeholder.com/300'}" alt="Xəbər şəkli">
-//                 <h3><a href="${article.url}" target="_blank">${article.title}</a></h3>
-//                 <p>${article.description || "Təsvir mövcud deyil."}</p>
-//             `;
-
-//             newsContainer.appendChild(newsItem);
-//         });
-
-//     } catch (error) {
-//         console.error("Xəbərləri gətirərkən xəta baş verdi:", error);
-//     }
-// }

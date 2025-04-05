@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Armata", sans-serif;
+    background: url(photo/pexels-ensar-84745078-17189557.jpg) no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }

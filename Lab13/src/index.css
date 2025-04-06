@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(104, 15, 45);
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+.prev{
+  border: none;
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+.next{
+  border: none;
+  padding: 20px;
+  font-size: 40px;
+  margin-left: 20px;
+}

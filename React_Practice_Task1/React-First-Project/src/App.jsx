@@ -1,20 +1,18 @@
-import React, { useState } from 'react';
-import EmployeeForm from './EmployeeForm';
-import EmployeeTable from './EmployeeTable';
+import React, { useState } from 'react'
+import { ToastContainer } from 'react-toastify';
 
-function App() {
-  const [employees, setEmployees] = useState([]); // İşçiləri saxlayacağımız state
 
-  const addEmployee = (employee) => {
-    setEmployees([...employees, employee]); // Yeni işçi əlavə edirik
-  };
+import { EmployeeForm } from './components/EmployeeForm'
+import { EmployeeTable } from './components/EmployeeTable'
+
+export const App = () => {
+  const [employees, setEmployes] = useState([]);
 
   return (
-    <div style={{ display: 'flex' }}>
-      <EmployeeForm addEmployee={addEmployee} /> {/* Formanı buraya əlavə edirik */}
-      <EmployeeTable employees={employees} /> {/* İşçiləri göstərmək üçün cədvəli buraya əlavə edirik */}
+    <div className='container'>
+      <EmployeeForm setEmployes={setEmployes} />
+      <EmployeeTable employees={employees}  setEmployes={setEmployes}/>
+      <ToastContainer />
     </div>
-  );
+  )
 }
-
-export default App;

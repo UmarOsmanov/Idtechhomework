@@ -26,7 +26,7 @@ export const EmployeeTable = ({ employees, setEmployes }) => {
               <td>{email}</td>
               <td>{salary}</td>
               <td>{date}</td>
-              <td onClick={() => handleDelete(idx)}>x</td>
+              <td className="cancel" onClick={() => handleDelete(idx)}>x</td>
             </tr>
           )
         )}

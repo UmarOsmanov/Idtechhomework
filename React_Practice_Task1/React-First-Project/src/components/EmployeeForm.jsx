@@ -53,7 +53,7 @@ export const EmployeeForm = ({ setEmployes }) => {
         <input name="salary" type="text" placeholder="salary" required />
         <input name="date" type="date" placeholder="date" required />
 
-        <button type="submit">Əlavə et</button>
+        <button className="btn" type="submit">Əlavə et</button>
       </form>
     </div>
   );

@@ -1,14 +1,234 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
 #root {
   max-width: 100%;
-  height: 100%;
+  height: 800vh;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   background-color: black;
   border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.main_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_content_text {
+  width: 50%;
+}
+
+.main_content_image {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 55px;
+}
+
+.main_content_image img {
+  width: 590px;
+  height: 550px;
+}
+.main_content_text h2 {
+  font-size: 3rem;
+}
+.section_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_title p {
+  color: linear-gradient 90deg, #b20d5d, #4a0ab4;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+.section_title h3 {
+  font-size: 3rem;
+  margin: 0;
+}
+.join_event_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.join_event_box_title {
+  width: 26.5%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #f24617;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.join_event_box_icon {
+  align-items: center;
+  background: linear-gradient(90deg, #b20d5d, #4a0ab4);
+  border-radius: 50%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+}
+
+.about_event_first_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_event_second_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_event {
+  padding: 2rem;
+  border: 1px solid red;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.about_event_second_box_title {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about_event_second_box_icon {
+  background: linear-gradient(90deg, #b20d5d, #4a0ab4);
+  border-radius: 50%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+}
+
+.about_event_third_box_photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.about_event_third_box_photo img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.buy_ticket_box {
+  display: flex;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #0e0a17;
+  gap: 1rem;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.buy_ticket_title_box {
+  width: 50%;
+}
+.buy_ticket_image_box {
+  width: 50%;
+  display: flex;
+  margin-right: 7px;
+}
+.buy_ticket_image_box img {
+  width: 100%;
+  border: 7px solid #1f1633;
+  border-radius: 1rem;
+}
+
+.team_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.team_box_members {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.team_box_member {
+  border-radius: 2rem;
+  position: relative;
+}
+.team_box_member img {
+  border-radius: 1rem;
+  height: 480px;
+}
+
+.team_box_member_title {
+  position: absolute;
+  width: 75%;
+  height: 15%;
+  border-radius: 1rem;
+  background: red;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event_direction {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #0e0a17;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.event_direction_title {
+  width: 50%;
+}
+.event_direction_result {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.event_direction_result_title {
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 1rem;
+  width: 40%;
+}
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery_image {
+  width: 24%;
+}
+.gallery_image img {
+  width: 100%;
+  border-radius: 1rem;
 }
